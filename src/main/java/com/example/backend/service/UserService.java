@@ -15,6 +15,7 @@ public class UserService {
     UserRepo userRepo;
 
     public Huser createuser(Huser huser) {
+        System.out.println("Creating user");
         return userRepo.save(huser);
     }
 
