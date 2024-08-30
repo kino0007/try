@@ -20,6 +20,7 @@ public class UserService {
     }
 
     public List<Huser> getAll(){
+        System.out.println("Finding All Users");
         return userRepo.findAll();
     }
 
