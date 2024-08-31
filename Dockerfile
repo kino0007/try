@@ -7,7 +7,7 @@ ADD build/libs/ROOT.war /usr/local/tomcat/webapps/
 ADD https://repo1.maven.org/maven2/com/h2database/h2/1.4.200/h2-1.4.200.jar /h2.jar
 
 # Expose port 8080
-EXPOSE 8080
+EXPOSE 8090
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
