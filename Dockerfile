@@ -1,9 +1,6 @@
 # Use the official Tomcat image from the Docker Hub
 FROM tomcat:10-jdk17
 
-#rename war file
-RUN mv build/libs/backend-1.0.war build/libs/ROOT.war
-
 # Add the WAR file to the webapps directory of Tomcat
 ADD build/libs/ROOT.war /usr/local/tomcat/webapps/
 
