@@ -23,11 +23,7 @@ pipeline {
             steps {
                 script {
                     bat '''
-                            @echo off
-                            for /F "tokens=*" %%i in ('docker ps -q --filter name=backend-container') do (
-                                docker stop %%i
-                                docker rm %%i
-                            )
+                            @echo off & for /F "tokens=*" %%i in ('docker ps -q --filter "name=backend"') do docker stop %%i & docker rm %%i
                             exit
                         '''
                 }
