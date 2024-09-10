@@ -34,4 +34,9 @@ public class UserController {
         return userService.deleteUser(id);
     }
 
+    @GetMapping("/getm")
+    public String getM(){
+        return "Hello";
+    }
+
 }
