@@ -39,4 +39,9 @@ public class UserController {
         return "Hello";
     }
 
+    @GetMapping("/getxyz")
+    public String getX(){
+        return "XYZ";
+    }
+
 }
