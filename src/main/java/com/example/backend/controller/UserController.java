@@ -44,4 +44,9 @@ public class UserController {
         return "XYZ";
     }
 
+    @GetMapping("/getabc")
+    public String getA(){
+        return "ABC";
+    }
+
 }
